@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gocorona">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon1"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CCTVweb"></activity>
+        <activity android:name=".cctv" />
+        <activity android:name=".AddCamera" />
+        <activity android:name=".About" />
+        <activity android:name=".GetHelp" />
+        <activity android:name=".Reports" />
+        <activity android:name=".WebsiteView" />
+        <activity android:name=".GetTracedUser" />
+        <activity android:name=".Trace" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".CovidCountryDetail" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

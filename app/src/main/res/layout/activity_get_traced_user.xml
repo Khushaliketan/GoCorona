@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetTracedUser"
+    android:background="@drawable/darkgradient"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List of devices which were in close contact"
+        android:id="@+id/tv"
+        android:textSize="20dp"
+        android:textColor="#fff"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tracedDevices"
+        android:tooltipText="Traced Devices"
+        android:layout_below="@+id/tv"
+        android:layout_marginTop="5dp"
+        />
+    </LinearLayout>
+
+</LinearLayout>

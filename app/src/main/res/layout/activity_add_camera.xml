@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddCamera">
+
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="numberDecimal"
+            android:id="@+id/getID"
+            android:hint="Add ID"
+            android:gravity="center" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:inputType="textUri"
+            android:layout_below="@+id/getID"
+            android:id="@+id/getURL"
+            android:layout_marginTop="30dp"
+            android:hint="ADD URL"
+            android:gravity="center" />
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getURL"
+            android:hint="ADD"
+            android:id="@+id/add"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="110dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
