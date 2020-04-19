@@ -23,22 +23,22 @@ public class MainActivity extends AppCompatActivity {
         gettraceduser=findViewById(R.id.getTraced);
         getreportsbtn=findViewById(R.id.getReportsButton);
         getchatbtn=findViewById(R.id.chatButton);
-        gethelpbtn=findViewById(R.id.helpButton);
-        getaboutbtn=findViewById(R.id.aboutButton);
+       // gethelpbtn=findViewById(R.id.helpButton);
+        //getaboutbtn=findViewById(R.id.aboutButton);
         setcameraIDbtn = findViewById(R.id.addcamera);
         getfootagebtn = findViewById(R.id.getfootage);
 
         traceFunction();
         reportsFunctions();
         chatFunction();
-        helpFunction();
-        aboutFunction();
-        setcameraID();
-        getfootage();
+        //helpFunction();
+        //aboutFunction();
+        setCameraID();
+        getFootage();
     }
 
 
-    private void getfootage(){
+    private void getFootage(){
         getfootagebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    private void setcameraID(){
+    private void setCameraID(){
         setcameraIDbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -162,13 +162,13 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void getHelpFunctionText(View view) {
-        Intent i=new Intent(getApplicationContext(),GetHelp.class);
-        startActivity(i);
-    }
+//    public void getHelpFunctionText(View view) {
+//        Intent i=new Intent(getApplicationContext(),GetHelp.class);
+//        startActivity(i);
+//    }
 
-    public void getAboutFunctionText(View view) {
-        Intent i=new Intent(getApplicationContext(),About.class);
-        startActivity(i);
-    }
+//    public void getAboutFunctionText(View view) {
+//        Intent i=new Intent(getApplicationContext(),About.class);
+//        startActivity(i);
+//    }
 }

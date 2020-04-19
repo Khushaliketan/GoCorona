@@ -38,7 +38,7 @@ public class cctv extends AppCompatActivity {
         if(c.getCount()>0){
             String x="";
             while(c.moveToNext()){
-                cameraList.add(c.getString(0)+"-"+c.getString(1));
+                cameraList.add(c.getString(1));
             }
             ArrayAdapter arrayAdapter=new ArrayAdapter(this,R.layout.textview,cameraList);
             cameralist.setAdapter(arrayAdapter);
@@ -47,7 +47,7 @@ public class cctv extends AppCompatActivity {
         cameralist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               Intent i = new Intent(getApplicationContext(),CCTVweb.class);
+               Intent i = new Intent(getApplicationContext(),WebsiteView.class);
                 i.putExtra("url", String.valueOf(parent.getItemAtPosition(position)));
                 startActivity(i);
                 Toast.makeText(getApplicationContext(),String.valueOf(parent.getItemAtPosition(position)),Toast.LENGTH_LONG).show();
